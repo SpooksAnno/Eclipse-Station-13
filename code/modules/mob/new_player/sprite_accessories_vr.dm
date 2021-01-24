@@ -10,32 +10,12 @@
 	var/color_blend_mode = ICON_MULTIPLY
 	species_allowed = list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_UNATHI, SPECIES_TAJ, SPECIES_TESHARI, SPECIES_NEVREAN, SPECIES_AKULA, SPECIES_SERGAL, SPECIES_ZORREN_FLAT, SPECIES_ZORREN_HIGH, SPECIES_VULPKANIN, SPECIES_XENOCHIMERA, SPECIES_XENOHYBRID, SPECIES_VASILISSAN, SPECIES_RAPALA, SPECIES_PROTEAN, SPECIES_ALRAUNE) //This lets all races use the default hairstyles.
 
-	awoohair
-		name = "Shoulder-length Messy"
-		icon = 'icons/mob/human_face_vr.dmi'
-		icon_add = 'icons/mob/human_face_vr_add.dmi'
-		icon_state = "momijihair"
-
-	citheronia
-		name = "Citheronia Hair (Kira72)"
-		icon = 'icons/mob/human_face_vr.dmi'
-		icon_state = "citheronia_hair"
-		ckeys_allowed = list("Kira72")
-		do_colouration = 0
-
 	taramaw
 		name = "Hairmaw (Liquidfirefly)"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_state = "maw_hair"
 		ckeys_allowed = list("liquidfirefly")
 		do_colouration = 0
-
-	citheronia_colorable
-		name = "Citheronia Hair"
-		icon = 'icons/mob/human_face_vr.dmi'
-		icon_add = 'icons/mob/human_face_vr_add.dmi'
-		icon_state = "citheronia_hair_c"
-		do_colouration = 1
 
 	sergal_plain
 		name = "Sergal Plain"
@@ -65,30 +45,11 @@
 		icon_state = "serg_fairytail"
 		species_allowed = list(SPECIES_SERGAL)
 
-	braid
-		name = "Floorlength Braid"
-		icon = 'icons/mob/human_face_vr.dmi'
-		icon_add = 'icons/mob/human_face_vr_add.dmi'
-		icon_state = "hair_braid"
-
-	twindrills
-		name = "Twin Drills"
-		icon = 'icons/mob/human_face_vr.dmi'
-		icon_add = 'icons/mob/human_face_vr_add.dmi'
-		icon_state = "hair_twincurl"
-
 	bald
 		name = "Bald"
 		icon_state = "bald"
 		gender = MALE
 		species_allowed = list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_UNATHI, SPECIES_TAJ, SPECIES_TESHARI, SPECIES_NEVREAN, SPECIES_AKULA, SPECIES_SERGAL, SPECIES_ZORREN_FLAT, SPECIES_ZORREN_HIGH, SPECIES_VULPKANIN, SPECIES_XENOCHIMERA, SPECIES_XENOHYBRID, SPECIES_VASILISSAN, SPECIES_RAPALA, SPECIES_PROTEAN, SPECIES_ALRAUNE) //Lets all the races be bald if they want.
-
-	ponytail6_fixed //Eggnerd's done with waiting for upstream fixes lmao.
-		name = "Ponytail 6 but fixed"
-		icon = 'icons/mob/human_face_vr.dmi'
-		icon_add = 'icons/mob/human_face_vr_add.dmi'
-		icon_state = "hair_ponytail6"
-		species_allowed = list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_UNATHI, SPECIES_TAJ, SPECIES_NEVREAN, SPECIES_AKULA,SPECIES_SERGAL, SPECIES_ZORREN_FLAT, SPECIES_ZORREN_HIGH, SPECIES_VULPKANIN, SPECIES_XENOCHIMERA, SPECIES_XENOHYBRID, SPECIES_VASILISSAN, SPECIES_RAPALA, SPECIES_PROTEAN, SPECIES_ALRAUNE)
 
 	una_hood
 		name = "Cobra Hood"
@@ -261,23 +222,23 @@
 
 //Skrell 'hairstyles' - these were requested for a chimera and screw it, if one wants to eat seafood, go nuts
 	skr_tentacle_veryshort
-		name = "Skrell Very Short Tentacles"
+		name = "(SKRELL) Very Short Tentacles"
 		icon_state = "skrell_hair_veryshort"
 		species_allowed = list(SPECIES_SKRELL, SPECIES_XENOCHIMERA, SPECIES_PROTEAN)
 		gender = MALE
 
 	skr_tentacle_short
-		name = "Skrell Short Tentacles"
+		name = "(SKRELL) Short Tentacles"
 		icon_state = "skrell_hair_short"
 		species_allowed = list(SPECIES_SKRELL, SPECIES_XENOCHIMERA, SPECIES_PROTEAN)
 
 	skr_tentacle_average
-		name = "Skrell Average Tentacles"
+		name = "(SKRELL) Average Tentacles"
 		icon_state = "skrell_hair_average"
 		species_allowed = list(SPECIES_SKRELL, SPECIES_XENOCHIMERA, SPECIES_PROTEAN)
 
 	skr_tentacle_verylong
-		name = "Skrell Long Tentacles"
+		name = "(SKRELL) Long Tentacles"
 		icon_state = "skrell_hair_verylong"
 		species_allowed = list(SPECIES_SKRELL, SPECIES_XENOCHIMERA, SPECIES_PROTEAN)
 		gender = FEMALE
@@ -290,48 +251,24 @@
 		species_allowed = list(SPECIES_VULPKANIN)
 		gender = NEUTER
 
-	vulp_hair_kajam
-		name = "Kajam"
-		icon = 'icons/mob/human_face_vr.dmi'
-		icon_add = 'icons/mob/human_face_vr_add.dmi'
-		icon_state = "kajam"
-		species_allowed = list(SPECIES_VULPKANIN, SPECIES_XENOCHIMERA, SPECIES_TAJ, SPECIES_SERGAL, SPECIES_ZORREN_FLAT, SPECIES_ZORREN_HIGH, SPECIES_PROTEAN)
-		gender = NEUTER
-
-	vulp_hair_keid
-		name = "Keid"
-		icon = 'icons/mob/human_face_vr.dmi'
-		icon_add = 'icons/mob/human_face_vr_add.dmi'
-		icon_state = "keid"
-		species_allowed = list(SPECIES_VULPKANIN, SPECIES_XENOCHIMERA, SPECIES_TAJ, SPECIES_SERGAL, SPECIES_ZORREN_FLAT, SPECIES_ZORREN_HIGH, SPECIES_PROTEAN)
-		gender = NEUTER
-
 	vulp_hair_adhara
-		name = "Adhara"
+		name = "(VULP) Adhara"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
 		icon_state = "adhara"
 		species_allowed = list(SPECIES_VULPKANIN, SPECIES_XENOCHIMERA, SPECIES_TAJ, SPECIES_SERGAL, SPECIES_ZORREN_FLAT, SPECIES_ZORREN_HIGH, SPECIES_PROTEAN)
 		gender = NEUTER
 
-	vulp_hair_kleeia
-		name = "Kleeia"
+	vulp_hair_anita
+		name = "(VULP) Anita"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
-		icon_state = "kleeia"
-		species_allowed = list(SPECIES_VULPKANIN, SPECIES_XENOCHIMERA, SPECIES_TAJ, SPECIES_SERGAL, SPECIES_ZORREN_FLAT, SPECIES_ZORREN_HIGH, SPECIES_PROTEAN)
-		gender = NEUTER
-
-	vulp_hair_mizar
-		name = "Mizar"
-		icon = 'icons/mob/human_face_vr.dmi'
-		icon_add = 'icons/mob/human_face_vr_add.dmi'
-		icon_state = "mizar"
+		icon_state = "anita"
 		species_allowed = list(SPECIES_VULPKANIN, SPECIES_XENOCHIMERA, SPECIES_TAJ, SPECIES_SERGAL, SPECIES_ZORREN_FLAT, SPECIES_ZORREN_HIGH, SPECIES_PROTEAN)
 		gender = NEUTER
 
 	vulp_hair_apollo
-		name = "Apollo"
+		name = "(VULP) Apollo"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
 		icon_state = "apollo"
@@ -339,7 +276,7 @@
 		gender = NEUTER
 
 	vulp_hair_belle
-		name = "Belle"
+		name = "(VULP) Belle"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
 		icon_state = "belle"
@@ -347,23 +284,15 @@
 		gender = NEUTER
 
 	vulp_hair_bun
-		name = "Bun"
+		name = "(VULP) Bun"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
 		icon_state = "bun"
 		species_allowed = list(SPECIES_VULPKANIN, SPECIES_XENOCHIMERA, SPECIES_TAJ, SPECIES_SERGAL, SPECIES_ZORREN_FLAT, SPECIES_ZORREN_HIGH, SPECIES_PROTEAN)
 		gender = NEUTER
 
-	vulp_hair_jagged
-		name = "Jagged"
-		icon = 'icons/mob/human_face_vr.dmi'
-		icon_add = 'icons/mob/human_face_vr_add.dmi'
-		icon_state = "jagged"
-		species_allowed = list(SPECIES_VULPKANIN, SPECIES_XENOCHIMERA, SPECIES_TAJ, SPECIES_SERGAL, SPECIES_ZORREN_FLAT, SPECIES_ZORREN_HIGH, SPECIES_PROTEAN)
-		gender = NEUTER
-
 	vulp_hair_curl
-		name = "Curl"
+		name = "(VULP) Curl"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
 		icon_state = "curl"
@@ -371,23 +300,55 @@
 		gender = NEUTER
 
 	vulp_hair_hawk
-		name = "Hawk"
+		name = "(VULP) Hawk"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
 		icon_state = "hawk"
 		species_allowed = list(SPECIES_VULPKANIN, SPECIES_XENOCHIMERA, SPECIES_TAJ, SPECIES_SERGAL, SPECIES_ZORREN_FLAT, SPECIES_ZORREN_HIGH, SPECIES_PROTEAN)
 		gender = NEUTER
 
-	vulp_hair_anita
-		name = "Anita"
+	vulp_hair_jagged
+		name = "(VULP) Jagged"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
-		icon_state = "anita"
+		icon_state = "jagged"
+		species_allowed = list(SPECIES_VULPKANIN, SPECIES_XENOCHIMERA, SPECIES_TAJ, SPECIES_SERGAL, SPECIES_ZORREN_FLAT, SPECIES_ZORREN_HIGH, SPECIES_PROTEAN)
+		gender = NEUTER
+
+	vulp_hair_kajam
+		name = "(VULP) Kajam"
+		icon = 'icons/mob/human_face_vr.dmi'
+		icon_add = 'icons/mob/human_face_vr_add.dmi'
+		icon_state = "kajam"
+		species_allowed = list(SPECIES_VULPKANIN, SPECIES_XENOCHIMERA, SPECIES_TAJ, SPECIES_SERGAL, SPECIES_ZORREN_FLAT, SPECIES_ZORREN_HIGH, SPECIES_PROTEAN)
+		gender = NEUTER
+
+	vulp_hair_keid
+		name = "(VULP) Keid"
+		icon = 'icons/mob/human_face_vr.dmi'
+		icon_add = 'icons/mob/human_face_vr_add.dmi'
+		icon_state = "keid"
+		species_allowed = list(SPECIES_VULPKANIN, SPECIES_XENOCHIMERA, SPECIES_TAJ, SPECIES_SERGAL, SPECIES_ZORREN_FLAT, SPECIES_ZORREN_HIGH, SPECIES_PROTEAN)
+		gender = NEUTER
+
+	vulp_hair_kleeia
+		name = "(VULP) Kleeia"
+		icon = 'icons/mob/human_face_vr.dmi'
+		icon_add = 'icons/mob/human_face_vr_add.dmi'
+		icon_state = "kleeia"
+		species_allowed = list(SPECIES_VULPKANIN, SPECIES_XENOCHIMERA, SPECIES_TAJ, SPECIES_SERGAL, SPECIES_ZORREN_FLAT, SPECIES_ZORREN_HIGH, SPECIES_PROTEAN)
+		gender = NEUTER
+
+	vulp_hair_mizar
+		name = "(VULP) Mizar"
+		icon = 'icons/mob/human_face_vr.dmi'
+		icon_add = 'icons/mob/human_face_vr_add.dmi'
+		icon_state = "mizar"
 		species_allowed = list(SPECIES_VULPKANIN, SPECIES_XENOCHIMERA, SPECIES_TAJ, SPECIES_SERGAL, SPECIES_ZORREN_FLAT, SPECIES_ZORREN_HIGH, SPECIES_PROTEAN)
 		gender = NEUTER
 
 	vulp_hair_short
-		name = "Short"
+		name = "(VULP) Short"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
 		icon_state = "short"
@@ -395,7 +356,7 @@
 		gender = NEUTER
 
 	vulp_hair_spike
-		name = "Spike"
+		name = "(VULP) Spike"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
 		icon_state = "spike"
@@ -410,6 +371,7 @@
 		icon_state = "cxeno_drone"
 		species_allowed = list(SPECIES_XENOHYBRID)
 		gender = NEUTER
+
 // figure this one out for better coloring
 	xeno_head_sentinel_color
 		name = "Sentinal dome"
